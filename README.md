@@ -179,7 +179,13 @@ $~$
 
 To keep track of the uptime and status of Flow Forge, visit **[Uptime Monitoring](https://flowforge.betteruptime.com/)**.
 
-<script src="https://uptime.betterstack.com/widgets/announcement.js" data-id="202405" async="async" type="text/javascript"></script>
+<p align="center">
+  <a href="https://flowforge.betteruptime.com/" target="_blank">
+    <img src="https://github.com/user-attachments/assets/0158455d-7123-4bb7-babc-8af0b71e5ce0" alt="App Status Loader" />
+  </a>
+</p>
+
+
 
 ## :people_holding_hands: Our List of Contributors
 
