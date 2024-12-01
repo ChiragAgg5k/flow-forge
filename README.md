@@ -10,6 +10,8 @@
   <img src="https://img.shields.io/badge/Appwrite-F02E65?style=for-the-badge&logo=appwrite&logoColor=white" />
 </p>
 
+> ⚠️ Note: Appwrite is currently facing some outage and because of this, the app might not work as expected. Please check the appwrite status [here](https://status.appwrite.online/).
+
 ### :star2: About
 
 **Flow-Forge** is your one-stop solution to optimize GitHub workflows. With features like repository orchestration, automated issue management, and streamlined PR reviews, Flow-Forge turns chaotic workflows into seamless clockwork operations.
