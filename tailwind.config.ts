@@ -73,11 +73,31 @@ const config: Config = {
       },
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
+         spotlight: "spotlight 2s ease .75s 1 forwards",
+         shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
         "infinite-scroll": {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
+        },
+        spotlight: {
+          "0%": {
+            opacity: "0",
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
         },
       },
     },
