@@ -179,13 +179,7 @@ $~$
 
 To keep track of the uptime and status of Flow Forge, visit **[Uptime Monitoring](https://flowforge.betteruptime.com/)**.
 
-<p align="center">
-  <a href="https://flowforge.betteruptime.com/" target="_blank">
-    <img src="https://github.com/user-attachments/assets/0158455d-7123-4bb7-babc-8af0b71e5ce0" alt="App Status Loader" />
-  </a>
-</p>
-
-
+<iframe src="https://flowforge.betteruptime.com/badge?theme=dark" width="250" height="30" frameborder="0" scrolling="no"></iframe>
 
 ## :people_holding_hands: Our List of Contributors
 
