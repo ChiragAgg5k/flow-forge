@@ -102,6 +102,7 @@ $~$
    - Follow the instructors on [Kestra.io](https://kestra.io/) on how to deploy Kestra on Azure VM, and replace the public IP address for it in the code. You can find the [workflow file](./kestra/create-github-issue.yaml) here.
      $~$
 
+
 ## 📑 Documentation Highlights
 
 ### CI/CD Manager Overview
@@ -167,7 +168,19 @@ You can find the full text of the license [here](LICENSE).
 
 $~$
 
-### :people_holding_hands: Our List of Contributors
+## ⏱️ Monitor the Uptime of our App
+
+To keep track of the uptime and status of Flow Forge, visit **[Uptime Monitoring](https://flowforge.betteruptime.com/)**.
+
+<p align="center">
+  <a href="https://flowforge.betteruptime.com/" target="_blank">
+    <img src="https://github.com/user-attachments/assets/0158455d-7123-4bb7-babc-8af0b71e5ce0" alt="App Status Loader" />
+  </a>
+</p>
+
+
+
+## :people_holding_hands: Our List of Contributors
 
 <a href="https://github.com/ChiragAgg5k/flow-forge/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ChiragAgg5k/flow-forge" />
