@@ -179,7 +179,7 @@ $~$
 
 To keep track of the uptime and status of Flow Forge, visit **[Uptime Monitoring](https://flowforge.betteruptime.com/)**.
 
-<iframe src="https://flowforge.betteruptime.com/badge?theme=dark" width="250" height="30" frameborder="0" scrolling="no"></iframe>
+<script src="https://uptime.betterstack.com/widgets/announcement.js" data-id="202405" async="async" type="text/javascript"></script>
 
 ## :people_holding_hands: Our List of Contributors
 
