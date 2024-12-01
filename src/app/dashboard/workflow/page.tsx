@@ -35,7 +35,7 @@ const WorkflowPage = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-background text-foreground p-8">
+      <div className="min-h-[90vh] bg-background text-foreground p-8 flex items-center justify-center">
         <div className="text-center text-muted-foreground">
           Loading Workflow...
         </div>
@@ -45,14 +45,14 @@ const WorkflowPage = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-background text-foreground p-8">
+      <div className="min-h-[90vh] bg-background text-foreground p-8 flex items-center justify-center">
         <div className="text-center text-red-500">{error}</div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground p-8">
+    <div className="min-h-[90vh] bg-background text-foreground p-8">
       {/* Header */}
       <header className="mb-8">
         <h1 className="text-3xl font-bold">Workflow Manager</h1>

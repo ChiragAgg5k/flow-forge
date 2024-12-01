@@ -75,7 +75,7 @@ function Settings() {
   }, [user.current?.$id]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground p-8">
+    <div className="min-h-[90vh] bg-background text-foreground p-8">
       <header className="mb-8">
         <h1 className="text-3xl font-bold">Settings</h1>
         <p className="text-muted-foreground text-sm mt-2">
@@ -164,7 +164,7 @@ function Settings() {
               }}
               className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600"
             >
-              {isLoading ? "Logging out..." : "Logout"}
+              {isLoading ? "Loading..." : "Logout"}
             </button>
           </div>
         </section>

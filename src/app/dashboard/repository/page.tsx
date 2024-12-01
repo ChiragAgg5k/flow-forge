@@ -23,7 +23,7 @@ interface Repository {
   html_url: string;
 }
 
-function Repository() {
+function RepositoryPage() {
   const user = useUser();
   const [repositories, setRepositories] = useState<Repository[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -67,13 +67,12 @@ function Repository() {
   }, [user.current?.email]);
 
   const handleSelectRepository = (repo: Repository) => {
-    // Navigate to a specific repository page or pass repo details
     router.push(`/dashboard/repository/${repo.name}`);
   };
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-background text-foreground p-8">
+      <div className="min-h-[90vh] bg-background text-foreground p-8 flex items-center justify-center">
         <div className="text-center text-muted-foreground">
           Loading repositories...
         </div>
@@ -83,7 +82,7 @@ function Repository() {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-background text-foreground p-8">
+      <div className="min-h-[90vh] bg-background text-foreground p-8 flex items-center justify-center">
         <div className="text-center text-red-500">{error}</div>
       </div>
     );
@@ -136,4 +135,4 @@ function Repository() {
   );
 }
 
-export default Repository;
+export default RepositoryPage;

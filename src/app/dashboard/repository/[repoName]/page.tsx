@@ -13,8 +13,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { CopilotTextarea } from "@copilotkit/react-textarea";
 import { database } from "@/lib/appwrite";
+import { CopilotTextarea } from "@copilotkit/react-textarea";
 import { Query } from "appwrite";
 import axios from "axios";
 import { useParams } from "next/navigation";
@@ -52,7 +52,7 @@ interface GitHubItem {
   };
 }
 
-function Repository() {
+function RepositoryDetailsPage() {
   const { repoName } = useParams();
   const user = useUser();
   const [username, setUsername] = useState<string | null>(null);
@@ -186,7 +186,7 @@ function Repository() {
 
   if (isLoading || !repository) {
     return (
-      <div className="min-h-screen bg-background text-foreground p-8">
+      <div className="min-h-[90vh] bg-background text-foreground p-8 flex items-center justify-center">
         <div className="text-center text-muted-foreground">
           Loading repository details...
         </div>
@@ -196,15 +196,14 @@ function Repository() {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-background text-foreground p-8">
+      <div className="min-h-[90vh] bg-background text-foreground p-8 flex items-center justify-center">
         <div className="text-center text-red-500">{error}</div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground p-8">
-      {/* Header */}
+    <div className="min-h-[90vh] bg-background text-foreground p-8">
       <header className="mb-8">
         <h1 className="text-2xl font-bold">
           <span className="text-zinc-500">{username}</span> / {repository.name}
@@ -373,4 +372,4 @@ function Repository() {
   );
 }
 
-export default Repository;
+export default RepositoryDetailsPage;

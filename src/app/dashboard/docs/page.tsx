@@ -57,7 +57,7 @@ function Docs() {
                 {
                   id: "VScode-Implementation",
                   label: "9. VScode Implementation",
-                }
+                },
               ].map((item) => (
                 <li key={item.id} className="group">
                   <a
@@ -81,66 +81,67 @@ function Docs() {
               1. Introduction
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed">
-    The CI/CD Manager enhances CI/CD pipeline efficiency by monitoring
-    GitHub workflows, automating issue tracking, and providing real-time
-    notifications for failures.
-  </p>
-  <p className="text-lg text-gray-300 leading-relaxed">
-    By streamlining CI/CD processes, it fosters better collaboration and
-    optimizes operational efficiency.
-  </p>
-  <div className="space-y-6">
-    <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-      Key Problems Solved
-    </h3>
-    <ul className="list-disc pl-8 space-y-4">
-      <li className="flex items-start gap-2">
-        <span className="h-2 w-2 mt-2 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full"></span>
-        <span className="text-gray-300">
-          <span className="text-gradient bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text font-medium">
-            Workflow Monitoring Gaps
-          </span>
-          : Provides detailed insights into workflow statuses and logs.
-        </span>
-      </li>
-      <li className="flex items-start gap-2">
-        <span className="h-2 w-2 mt-2 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full"></span>
-        <span className="text-gray-300">
-          <span className="text-gradient bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text font-medium">
-            Delayed Failure Responses
-          </span>
-          : Automates GitHub issue creation for failed workflows, reducing
-          manual intervention.
-        </span>
-      </li>
-      <li className="flex items-start gap-2">
-        <span className="h-2 w-2 mt-2 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full"></span>
-        <span className="text-gray-300">
-          <span className="text-gradient bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text font-medium">
-            Ineffective Communication
-          </span>
-          : Sends instant notifications via Discord and Slack to keep
-          team members informed of critical events.
-        </span>
-      </li>
-    </ul>
-  </div>
+              The CI/CD Manager enhances CI/CD pipeline efficiency by monitoring
+              GitHub workflows, automating issue tracking, and providing
+              real-time notifications for failures.
+            </p>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              By streamlining CI/CD processes, it fosters better collaboration
+              and optimizes operational efficiency.
+            </p>
+            <div className="space-y-6">
+              <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                Key Problems Solved
+              </h3>
+              <ul className="list-disc pl-8 space-y-4">
+                <li className="flex items-start gap-2">
+                  <span className="h-2 w-2 mt-2 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full"></span>
+                  <span className="text-gray-300">
+                    <span className="text-gradient bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text font-medium">
+                      Workflow Monitoring Gaps
+                    </span>
+                    : Provides detailed insights into workflow statuses and
+                    logs.
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="h-2 w-2 mt-2 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full"></span>
+                  <span className="text-gray-300">
+                    <span className="text-gradient bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text font-medium">
+                      Delayed Failure Responses
+                    </span>
+                    : Automates GitHub issue creation for failed workflows,
+                    reducing manual intervention.
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="h-2 w-2 mt-2 bg-gradient-to-r from-blue-300 to-purple-400 rounded-full"></span>
+                  <span className="text-gray-300">
+                    <span className="text-gradient bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text font-medium">
+                      Ineffective Communication
+                    </span>
+                    : Sends instant notifications via Discord and Slack to keep
+                    team members informed of critical events.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-  <div className="mt-6">
-    <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-      Project Demo
-    </h3>
-    <div className="mt-4">
-      <iframe
-        className="w-full aspect-video rounded-lg shadow-lg"
-        src="https://www.youtube.com/embed/-FPnJWJPmk8"
-        title="CI/CD Manager Project Demo"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    </div>
-  </div>
+            <div className="mt-6">
+              <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                Project Demo
+              </h3>
+              <div className="mt-4">
+                <iframe
+                  className="w-full aspect-video rounded-lg shadow-lg"
+                  src="https://www.youtube.com/embed/-FPnJWJPmk8"
+                  title="CI/CD Manager Project Demo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </section>
 
           {/* Features Section */}
@@ -1250,86 +1251,93 @@ variables:
               9. VScode Implementation
             </h2>
             <div className="space-y-8">
-    <div>
-      <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-        Key Points
-      </h3>
-      <ul className="list-disc pl-8 space-y-4 text-gray-300">
-        <li>
-          <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
-            Notifications
-          </span>
-          : Receives real-time updates about Kestra workflows (e.g., execution
-          success or failure).
-        </li>
-        <li>
-          <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
-            Logs
-          </span>
-          : Displays workflow logs in the "Kestra Logs" output channel in VS
-          Code.
-        </li>
-        <li>
-          <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
-            Commands
-          </span>
-          : Execute tasks like fetching GitHub workflows or creating issues
-          directly from VS Code.
-        </li>
-      </ul>
-    </div>
+              <div>
+                <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                  Key Points
+                </h3>
+                <ul className="list-disc pl-8 space-y-4 text-gray-300">
+                  <li>
+                    <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
+                      Notifications
+                    </span>
+                    : Receives real-time updates about Kestra workflows (e.g.,
+                    execution success or failure).
+                  </li>
+                  <li>
+                    <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
+                      Logs
+                    </span>
+                    : Displays workflow logs in the "Kestra Logs" output channel
+                    in VS Code.
+                  </li>
+                  <li>
+                    <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
+                      Commands
+                    </span>
+                    : Execute tasks like fetching GitHub workflows or creating
+                    issues directly from VS Code.
+                  </li>
+                </ul>
+              </div>
 
-    <div>
-      <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-        Why It's Useful
-      </h3>
-      <ul className="list-disc pl-8 space-y-4 text-gray-300">
-        <li>Streamlined Monitoring: Stay updated without leaving VS Code.</li>
-        <li>Faster Debugging: View logs and errors in real-time.</li>
-        <li>Improved Collaboration: Teams can act on workflow events instantly.</li>
-      </ul>
-    </div>
+              <div>
+                <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                  Why It's Useful
+                </h3>
+                <ul className="list-disc pl-8 space-y-4 text-gray-300">
+                  <li>
+                    Streamlined Monitoring: Stay updated without leaving VS
+                    Code.
+                  </li>
+                  <li>Faster Debugging: View logs and errors in real-time.</li>
+                  <li>
+                    Improved Collaboration: Teams can act on workflow events
+                    instantly.
+                  </li>
+                </ul>
+              </div>
 
-    <div>
-      <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-        How It Works
-      </h3>
-      <ol className="list-decimal pl-8 space-y-4 text-gray-300">
-        <li>
-          <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
-            Kestra Workflow
-          </span>
-          : Sends HTTP requests to the VS Code extension:
-          <ul className="list-disc pl-8 space-y-4 text-gray-300">
-            <li>
-              <code>/notify</code>: Sends notifications about workflows.
-            </li>
-            <li>
-              <code>/logs</code>: Sends detailed execution logs.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
-            VS Code Extension
-          </span>
-          : Receives and displays these updates in real-time.
-        </li>
-      </ol>
-    </div>
+              <div>
+                <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                  How It Works
+                </h3>
+                <ol className="list-decimal pl-8 space-y-4 text-gray-300">
+                  <li>
+                    <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
+                      Kestra Workflow
+                    </span>
+                    : Sends HTTP requests to the VS Code extension:
+                    <ul className="list-disc pl-8 space-y-4 text-gray-300">
+                      <li>
+                        <code>/notify</code>: Sends notifications about
+                        workflows.
+                      </li>
+                      <li>
+                        <code>/logs</code>: Sends detailed execution logs.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span className="font-medium bg-gradient-to-r from-blue-300 to-purple-400 text-transparent bg-clip-text">
+                      VS Code Extension
+                    </span>
+                    : Receives and displays these updates in real-time.
+                  </li>
+                </ol>
+              </div>
 
-    <div>
-      <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-        Benefits
-      </h3>
-      <ul className="list-disc pl-8 space-y-4 text-gray-300">
-        <li>Reduces context switching.</li>
-        <li>Simplifies monitoring and debugging.</li>
-        <li>Keeps developers focused in their IDE.</li>
-      </ul>
-    </div>
-  </div>
-            </section>
+              <div>
+                <h3 className="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                  Benefits
+                </h3>
+                <ul className="list-disc pl-8 space-y-4 text-gray-300">
+                  <li>Reduces context switching.</li>
+                  <li>Simplifies monitoring and debugging.</li>
+                  <li>Keeps developers focused in their IDE.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </div>
