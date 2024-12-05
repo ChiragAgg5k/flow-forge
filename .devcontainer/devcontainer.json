@@ -1,0 +1,21 @@
+{
+    "name": "Flow Forge Development Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/sh",
+          "eslint.enable": true,
+          "prettier.resolveGlobalModules": true
+        },
+        "extensions": [
+          "esbenp.prettier-vscode",
+          "dbaeumer.vscode-eslint",
+          "ms-vscode.vscode-typescript-tslint"
+        ]
+      }
+    }
+}
