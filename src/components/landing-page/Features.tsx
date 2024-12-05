@@ -27,10 +27,10 @@ export const Features = () => {
         Everything you need <br className="sm:hidden" />
         <span className="text-purple-500">to forge ahead</span>
       </h2>
-      <div className="max-w-xl mx-auto">
+      <div className="max-w-xl mx-auto py-4">
         <p className="text-center mt-5 text-lg sm:text-xl text-white/70">
           Supercharge your GitHub workflow with powerful automation tools. From
-          template-driven issues to instant Discord alerts, FlowForge helps your
+          template-driven issues to instant Discord alerts, we help your
           team move faster while staying in sync.
         </p>
       </div>
