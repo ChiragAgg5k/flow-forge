@@ -1,74 +1,53 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
-import CursorImage from "../../assets/images/cursor.png";
-import MessageImage from "../../assets/images/message.png";
 import { useUser } from "../auth-provider";
+import { Spotlight } from "@/components/landing-page/Spotlight";
 
 export const Hero = () => {
   const user = useUser();
 
   return (
-    <div className="bg-black text-white bg-[linear-gradient(to_bottom,#000,#200D42_34%,#4F21A1_65%,#A46EDB_82%)] py-[72px] sm:py-24 relative overflow-clip">
-      <div className="absolute h-[375px] w-[750px] sm:w-[1536px] sm:h-[768px] lg:w-[2400px] llg:h-[800px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
+    <div className="bg-black text-white bg-[linear-gradient(to_bottom,#000,#1A0738_34%)] py-[85px] sm:py-40 relative overflow-clip">
       <div className="relative">
-        <div className="flex items-center justify-center -mt-10"></div>
-        <div className="flex justify-center mt-8 ">
-          <div className="inline-flex relative">
-            <h1 className="text-6xl sm:text-8xl font-bold tracking-tightner text-center inline-flex">
-              Flow Forge
-            </h1>
-            <motion.div
-              className="absolute right-[478px] top-[108px] hidden sm:inline"
-              drag
-              dragSnapToOrigin
-              animate={{
-                y: [0, -10, 0],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            >
-              <Image
-                src={CursorImage}
-                alt="cursor"
-                height={200}
-                width={200}
-                className="max-w-none"
-                draggable="false"
-              />
-            </motion.div>
-            <motion.div
-              className="absolute left-[498px] top-[56px] hidden sm:inline"
-              drag
-              dragSnapToOrigin
-              animate={{
-                y: [0, -10, 0],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1,
-              }}
-            >
-              <Image
-                src={MessageImage}
-                alt="cursor"
-                height={200}
-                width={200}
-                className="max-w-none"
-                draggable="false"
-              />
-            </motion.div>
-          </div>
+        {/* Adjust the Spotlight positioning */}
+        <Spotlight
+          className="-top-60 left-0 md:left-60 md:-top-40" 
+          fill="white"
+        />
+
+        <div className="flex justify-center mt-8">
+          <motion.h1
+            className="text-8xl sm:text-8xl font-bold tracking-tight text-center bg-clip-text text-transparent bg-gradient-to-t from-gray-400 to-white"
+            style={{
+              lineHeight: '1.2',
+              paddingBottom: '0.1em',
+            }}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+              delay: 0.2,
+            }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+          >
+            Flow Forge
+          </motion.h1>
         </div>
+
+        {/* Subtitle with gradient text */}
         <div className="flex justify-center">
-          <p className="text-lg sm:text-xl text-center mt-8 max-w-sm md:max-w-md">
+          <motion.p
+            className="text-xl text-center mt-6 max-w-md text-gray-300"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             Streamline your GitHub workflow with FlowForge, automating{" "}
             <span className="text-gradient bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
               issue management
@@ -78,29 +57,39 @@ export const Hero = () => {
               PR reviews
             </span>{" "}
             from one powerful dashboard.
-          </p>
+          </motion.p>
         </div>
+
+        {/* Call to Action */}
         <div className="flex justify-center mt-8">
           {user.current ? (
-            <Link href={"/dashboard"}>
-              <motion.button
-                className="bg-white text-black py-3 px-5 rounded-lg font-medium"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get Started
-              </motion.button>
-            </Link>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <Link href={"/dashboard"}>
+                <button className="bg-white text-black py-4 px-8 rounded-full font-medium shadow-lg hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
+                  Go to Dashboard
+                </button>
+              </Link>
+            </motion.div>
           ) : (
-            <Link href={"/sign-in"}>
-              <motion.button
-                className="bg-white text-black py-3 px-5 rounded-lg font-medium"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get Started
-              </motion.button>
-            </Link>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <Link href={"/sign-in"}>
+              <button className="bg-gradient-to-r from-[#6B2FA1] to-[#D6A0E4] text-white py-4 px-12 font-medium shadow-lg hover:shadow-xl transition-all duration-500 ease-in-out rounded-full hover:bg-[#8c3d9f] hover:shadow-[#6B2FA1] hover:shadow-2xl">
+  Get Started!
+</button>
+
+
+
+
+              </Link>
+            </motion.div>
           )}
         </div>
       </div>
